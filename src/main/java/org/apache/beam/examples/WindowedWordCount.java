@@ -196,6 +196,7 @@ public class WindowedWordCount {
      */
 
     //Align the window to start with the element with the youngest timestamp
+    //final Duration offset = Duration.standardSeconds(0);
     final Duration offset = Duration.standardSeconds(minTimestamp.toDateTime().getSecondOfMinute());
 
     PCollection<String> windowedWords =
