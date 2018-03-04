@@ -1,0 +1,13 @@
+build
+.idea/*.xml
+.idea/inspectionProfiles
+.idea/libraries
+.idea/shelf
+.gradle
+target
+.iml
+logs/**
+*.iml
+**/dependency-reduced-pom.xml
+**/logs/
+
