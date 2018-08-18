@@ -95,7 +95,7 @@ public class WriteOneFilePerWindow extends PTransform<PCollection<String>, PDone
                                        BoundedWindow window,
                                        PaneInfo paneInfo,
                                        OutputFileHints outputFileHints) {
-     System.out.println(paneInfo.getTiming() + " , window.maxTimestamp()="+window.maxTimestamp());
+      System.out.println(window);
       IntervalWindow intervalWindow = (IntervalWindow) window;
       String filename =
           String.format(
